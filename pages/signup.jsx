@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import { postImage, register } from "../utils/api";
 import { toast } from "react-toastify";
 
-const signup = () => {
+const Signup = () => {
   const [name, setName] = useState();
   const [email, setEmail] = useState();
   const [password, setPassword] = useState();
@@ -85,4 +85,4 @@ const signup = () => {
   );
 };
 
-export default signup;
+export default Signup;

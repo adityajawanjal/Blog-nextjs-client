@@ -5,7 +5,7 @@ import { loginUser, setCookie } from "../utils/api";
 import { useRouter } from "next/navigation";
 import { toast } from "react-toastify";
 
-const login = () => {
+const Login = () => {
   const [email, setEmail] = useState();
   const [password, setPassword] = useState();
 
@@ -73,4 +73,4 @@ const login = () => {
   );
 };
 
-export default login;
+export default Login;

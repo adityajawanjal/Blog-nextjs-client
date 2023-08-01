@@ -1,7 +1,8 @@
 import Image from "next/image";
 import { fetchSingleArticle, myInfo, url, verifyUser } from "../../utils/api";
 import { useRouter } from "next/navigation";
-const singlePage = ({ article, user }) => {
+
+const SinglePage = ({ article, user }) => {
   const router = useRouter();
 
   const updateDate = () => {
@@ -77,4 +78,4 @@ export const getServerSideProps = async ({ req, res, query }) => {
   };
 };
 
-export default singlePage;
+export default SinglePage;

@@ -8,7 +8,7 @@ import {
 } from "../utils/api";
 import { useRouter } from "next/navigation";
 
-const post = ({ user, categories }) => {
+const Post = ({ user, categories }) => {
   const [title, setTitle] = useState();
   const [description, setDescription] = useState();
   const [category, setCategory] = useState();
@@ -187,4 +187,4 @@ export const getServerSideProps = async ({ req, res }) => {
   };
 };
 
-export default post;
+export default Post;

@@ -2,7 +2,7 @@ import Link from "next/link";
 import BlogCard from "../../../components/BlogCard";
 import { fetchAllUsers, fetchArticles } from "../../../utils/api";
 
-const category = ({ articles, users }) => {
+const Category = ({ articles, users }) => {
   return (
     <div className="mt-10 gap-5 px-3 grid grid-cols-1 ">
       {articles.map((e) => {
@@ -32,7 +32,7 @@ const category = ({ articles, users }) => {
   );
 };
 
-export default category;
+export default Category;
 
 export const getServerSideProps = async ({ query }) => {
   const res1 = await fetchArticles();
